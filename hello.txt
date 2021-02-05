@@ -1,3 +1,3 @@
 Hello world!
 Second Line
-Еще одна линия
+Third line $100
