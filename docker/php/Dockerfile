@@ -29,8 +29,8 @@ RUN docker-php-ext-install zip intl mbstring pdo_mysql pdo_pgsql pgsql exif \
     && docker-php-ext-configure gd --with-jpeg=/usr/include/ --with-freetype=/usr/include/ \
     && docker-php-ext-install gd
 
-RUN pecl install imagick \
-    && docker-php-ext-enable imagick
+#RUN pecl install imagick \
+#    && docker-php-ext-enable imagick
 
 RUN pecl install -o -f xdebug \
     && rm -rf /tmp/pear
